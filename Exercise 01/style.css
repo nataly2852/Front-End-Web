@@ -1,56 +1,29 @@
 html,
 body {
-  margin: none auto;
-  padding: none auto;
+  margin: 0 auto;
+  padding: 0 auto;
   background-color: white;
 }
 
 .site {
+  position: relative;
+  top: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 header {
-  display: fixed;
+  position: sticky;
+  width: 100%;
   background-color: green;
-  height: 10%;
+  height: 5%;
 }
-
-nav {
-  background-color: yellow;
-  height: 10%;
-}
-
-footer {
-  background-color: brown;
-  height: 10%;
-}
-
-
 
 .main {
   display: flex;
+  position: relative;
   background-color: orange;
-  height: 100vh;
-}
-
-
-
-#content {
-  background-color: pink;
-  height: 80%;
-}
-
-#serviceLinks {
-  background-color: lightblue;
-  margin-left: 2em;
-  margin-right: 2em;
-  padding: 1em;
-
-}
-
-a {
-  font-size: 1em;
+  height: 90vh;
 }
 
 
@@ -77,36 +50,103 @@ button {
   padding: 0.5em;
   margin: 0 auto;
   width: 90%;
-  min-width: 1em;
+  height: 20%;
+
   min-height: 1em;
-  max-width: 30em;
+  min-width: 9em;
   max-height: 5em;
-  /* margin: 5px; */
-  font-size: 1 em;
+  max-width: 45em;
+  font-size: 1em;
   text-align: center;
 }
-
-iframe,
-#map {
-  width: 90%;
-  height:60%;  
-  min-width: 1em;
-  max-width: 40em;
-  
-}
-
 
 #map {
   position: relative;
   /* display: inline-block; */
-  margin: 5px auto;
+  margin: 2% auto;
+  width: 95%;
+  height: 40%;
+  min-width: 1em;
+  max-width: 40em;
+}
 
-
-
+iframe {
+  width: 95%;
+  height: 100%;
+  min-width: 1em;
+  max-width: 40em;
 }
 
 
+#serviceLinks {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: lightblue;
+  height: 22%;
+  margin: 0 5%;
+}
+
+#serviceLinks a {
+  flex: 1 1 auto;
+  /* text-align: center; */
+  padding: 1px 10px;
+  font-size: 15px;
+}
+
 #right-side {
-  height: 500px;
   width: 75%;
+}
+
+nav {
+  position: relative;
+  background-color: yellow;
+  height: 5%;
+  padding: 0 0;
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-flex;
+  background-color: aliceblue;
+  margin: 5px 1px;
+  padding: 5px 40px;
+  font-size: 24px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  /* directly below the parent */
+  left: 0;
+  /* align with the left edge */
+  background-color: white;
+  z-index: 1000;
+  /* keeps it above other elements */
+  font-size: 10.5px;
+  width: 100%;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  /* ^THIS EXISTS???? BRO I SPENT AN HOUR TRYING TO MAKE THIS INLINE*/
+  position: absolute;
+  /* margin-block: 30px 0; */
+  background-color: white;
+}
+
+
+
+#content {
+  background-color: pink;
+  height: 80%;
+}
+
+footer {
+  background-color: brown;
+  height: 5%;
 }
