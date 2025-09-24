@@ -1,0 +1,112 @@
+html,
+body {
+  margin: none auto;
+  padding: none auto;
+  background-color: white;
+}
+
+.site {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  display: fixed;
+  background-color: green;
+  height: 10%;
+}
+
+nav {
+  background-color: yellow;
+  height: 10%;
+}
+
+footer {
+  background-color: brown;
+  height: 10%;
+}
+
+
+
+.main {
+  display: flex;
+  background-color: orange;
+  height: 100vh;
+}
+
+
+
+#content {
+  background-color: pink;
+  height: 80%;
+}
+
+#serviceLinks {
+  background-color: lightblue;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 1em;
+
+}
+
+a {
+  font-size: 1em;
+}
+
+
+#right-side,
+#side-bar {
+  text-align: center;
+}
+
+#side-bar {
+  width: 25%;
+  background-color: blue;
+}
+
+p {
+  font-size: 1em;
+  color: white;
+  margin: 0;
+}
+
+button {
+  background-color: aliceblue;
+  display: block;
+  /* padding: 10px; */
+  padding: 0.5em;
+  margin: 0 auto;
+  width: 90%;
+  min-width: 1em;
+  min-height: 1em;
+  max-width: 30em;
+  max-height: 5em;
+  /* margin: 5px; */
+  font-size: 1 em;
+  text-align: center;
+}
+
+iframe,
+#map {
+  width: 90%;
+  height:60%;  
+  min-width: 1em;
+  max-width: 40em;
+  
+}
+
+
+#map {
+  position: relative;
+  /* display: inline-block; */
+  margin: 5px auto;
+
+
+
+}
+
+
+#right-side {
+  height: 500px;
+  width: 75%;
+}
