@@ -150,3 +150,76 @@ footer {
   background-color: brown;
   height: 5%;
 }
+
+/* ----- Mobile (small screens) ----- */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  #side-bar {
+    width: 100%;     /* stack sidebar on top */
+    height: auto;
+  }
+
+  #right-side {
+    width: 100%;
+  }
+
+  nav {
+    font-size: 14px;
+  }
+
+  .dropdown {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+}
+
+/* ----- Tablet (medium screens) ----- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  #side-bar {
+    width: 35%;
+  }
+
+  #right-side {
+    width: 65%;
+  }
+
+  nav {
+    font-size: 18px;
+  }
+
+  .dropdown {
+    font-size: 18px;
+    padding: 5px 20px;
+  }
+}
+
+/* ----- Desktop (large screens) ----- */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+
+  #side-bar {
+    width: 25%; /* as you had it */
+  }
+
+  #right-side {
+    width: 75%;
+  }
+
+  nav {
+    font-size: 20px;
+  }
+
+  .dropdown {
+    font-size: 24px;
+    padding: 5px 40px;
+  }
+}
