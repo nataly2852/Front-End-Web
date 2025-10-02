@@ -77,14 +77,17 @@ iframe {
   max-width: 40em;
 }
 
-
 #serviceLinks {
   display: flex;
   align-content: center;
   flex-wrap: wrap;
   background-color: lightblue;
-  height: 22%;
+  height: 14%;
+  max-height: 22%;
+  min-height: 10%;
+
   margin: 0 5%;
+
 }
 
 #serviceLinks a {
@@ -110,8 +113,8 @@ nav {
   position: relative;
   display: inline-flex;
   background-color: aliceblue;
-  margin: 5px 1px;
-  padding: 5px 40px;
+  margin: 0 1px;
+  padding:6px 40px;
   font-size: 24px;
 }
 
