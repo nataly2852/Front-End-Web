@@ -19,16 +19,17 @@ p {
 main {
     display: flex;
     height: 90vh;
+    margin: 0 5em;
 }
 
-#Content {
-    background-color: aqua;
+#Left {
+    background-color: white;
     position: relative;
     display: inline-flex;
     align-self: top;
     padding: 0 2em;
     width: 40vw;
-    margin: 1em;
+    margin: 5em;
 }
 
 #Title>h1 {
@@ -43,6 +44,7 @@ main {
     margin: 0;
     color:
         rgb(110, 110, 110);
+    text-wrap: nowrap;
 }
 
 #Title {
@@ -54,7 +56,8 @@ main {
     display: inline-flex;
     margin: 1em 0;
     bottom: 0;
-align-items: flex-end;
+    align-items: flex-end;
+    text-wrap: nowrap;
 }
 
 #subheading>#tags {
@@ -65,16 +68,23 @@ align-items: flex-end;
 button {
     font-size: 1em;
     margin: 0 1em;
-    color:blueviolet;
+    color: blueviolet;
     background-color: rgb(221, 186, 255, 180);
     border-color: rgb(182, 154, 208);
+    text-wrap: nowrap;
+}
+
+#tags>button:hover {
+    background-color: white;
+    color: blueviolet;
 }
 
 #guidelines {
     font-size: 1.5em;
     margin: 1em;
-    padding: 1em;
+    padding: 0;
     align-items: center;
+    text-wrap: nowrap;
 }
 
 #Right {
@@ -85,26 +95,672 @@ button {
 }
 
 .Machine {
-    background-color: aquamarine;
+    background-color: white;
     display: inline-flex;
-    margin:5em 5em 0 5em;
+    margin: 5em 10em 0 15em;
     height: 10em;
-    align-items:center;
+    align-items: center;
 }
 
-.Machine p{
-    align-self: center;
-}
-
-#m2{
+#m2 {
     height: 8.5em;
 }
 
-#m1{
+#m1 {
     height: 11em;
 }
 
+.links {
+    justify-self: center;
+    margin: 0 1em;
+    padding: 0;
+}
 
-/* canvas {
-  display: block;
-} */
+.Template {
+    margin: 1em 2em;
+    justify-self: center;
+}
+
+.Template>button {
+    background-color: black;
+    color: white;
+    border-color: black;
+    text-wrap: nowrap;
+}
+
+.Template>button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 1770px) {
+    main {
+        display: flex;
+        height: 90vh;
+        margin: 1em;
+    }
+
+    #Left {
+        background-color: white;
+        position: relative;
+        display: inline-flex;
+        align-self: top;
+        padding: 0 2em;
+        width: 40vw;
+        margin: 5em;
+    }
+
+    button {
+        font-size: 1em;
+        color: blueviolet;
+        background-color: rgb(221, 186, 255, 180);
+        border-color: rgb(182, 154, 208);
+        text-wrap: nowrap;
+    }
+
+    #guidelines {
+        font-size: 1.5em;
+        text-wrap: nowrap;
+        margin: 1em;
+        padding: 0;
+    }
+
+    #Right {
+        background-color: rgb(255, 255, 255);
+        align-self: center;
+        width: 60vw;
+        margin: 1em;
+    }
+
+    .Machine {
+        background-color: white;
+        display: inline-flex;
+        margin: 5em 10em 0 10em;
+        height: 10em;
+        align-items: center;
+    }
+
+    #m2 {
+        height: 8.5em;
+    }
+
+    #m1 {
+        height: 11em;
+    }
+
+    .links {
+        justify-self: center;
+        margin: 0 1em;
+    }
+
+    .Template {
+        margin: 1em 2em;
+        justify-self: center;
+    }
+
+    .Template>button {
+        background-color: black;
+        color: white;
+        border-color: black;
+        text-wrap: no-wrap;
+    }
+}
+
+@media (max-width: 1630px) {
+
+
+    main {
+        display: flex;
+        height: 90vh;
+        margin: 1em;
+    }
+
+    #Left {
+        background-color: white;
+        position: relative;
+        display: inline-flex;
+        align-self: top;
+        padding: 0 2em;
+        width: 30vw;
+        margin: 5em;
+    }
+
+    #Title>h1 {
+        font-size: 3em;
+        text-align: left;
+        margin: 0;
+    }
+
+    #Title>h2 {
+        font-size: 1.5em;
+        text-align: left;
+        margin: 0;
+        color:
+            rgb(110, 110, 110);
+        text-wrap: nowrap;
+    }
+
+    #Title {
+        padding: 1em;
+        justify-content: flex-start
+    }
+
+    #subheading {
+        display: inline-flex;
+        margin: 1em 0;
+        bottom: 0;
+        align-items: flex-end;
+        text-wrap: nowrap;
+        font-size: 1em;
+    }
+
+    #subheading>#tags {
+        display: flex;
+        margin-left: 6em;
+    }
+
+    #tags {
+        font-size: 1.5em;
+    }
+
+    #guidelines {
+        font-size: 1.5em;
+        text-wrap: nowrap;
+        margin: 1em;
+        padding: 0;
+    }
+
+    #subheading>#tags {
+        display: flex;
+        margin-left: em;
+    }
+
+    button {
+        font-size: .7em;
+        margin: 0 .5em;
+        color: blueviolet;
+        background-color: rgb(221, 186, 255, 180);
+        border-color: rgb(182, 154, 208);
+        text-wrap: nowrap;
+    }
+
+    #Right {
+        background-color: rgb(255, 255, 255);
+        align-self: center;
+        width: 30vw;
+        margin: 0;
+    }
+
+    .Machine {
+        background-color: white;
+        display: inline-flex;
+        margin: 2em 5em 0 5em;
+        height: 10em;
+        align-items: center;
+    }
+
+
+    .links {
+        justify-self: center;
+        padding: 0;
+        margin: 0 1em;
+    }
+
+    .Template {
+        margin: 1em 2em;
+        justify-self: center;
+    }
+
+    .Template>button {
+        background-color: black;
+        color: white;
+        border-color: black;
+        text-wrap: nowrap;
+        font-size: 1em;
+    }
+}
+
+@media (max-width:1520px) {
+    main {
+        display: flex;
+        height: 90vh;
+        margin: 1em;
+    }
+
+    #Left {
+        background-color: white;
+        position: relative;
+        display: inline-flex;
+        align-self: top;
+        padding: 0 2em;
+        width: 30vw;
+        margin: 5em;
+    }
+
+    #Title>h1 {
+        font-size: 3em;
+        text-align: left;
+        margin: 0;
+    }
+
+    #Title>h2 {
+        font-size: 1.5em;
+        text-align: left;
+        margin: 0;
+        color:
+            rgb(110, 110, 110);
+        text-wrap: nowrap;
+    }
+
+    #Title {
+        padding: 1em;
+        justify-content: flex-start
+    }
+
+    #subheading {
+        display: inline-flex;
+        margin: 1em 0;
+        bottom: 0;
+        align-items: flex-end;
+        text-wrap: nowrap;
+        font-size: 1em;
+    }
+
+    #subheading>#tags {
+        display: flex;
+        margin-left: 8em;
+    }
+
+    #tags {
+        font-size: 1.5em;
+    }
+
+    #guidelines {
+        font-size: 1.5em;
+        text-wrap: nowrap;
+        margin: 1em;
+        padding: 0;
+    }
+
+    #subheading>#tags {
+        display: flex;
+        margin-left: 6em;
+    }
+
+    button {
+        font-size: .7em;
+        margin: 0 .5em;
+        color: blueviolet;
+        background-color: rgb(221, 186, 255, 180);
+        border-color: rgb(182, 154, 208);
+        text-wrap: nowrap;
+    }
+
+    #Right {
+        background-color: rgb(255, 255, 255);
+        align-self: center;
+        width: 30vw;
+        margin: 0;
+    }
+
+    .Machine {
+        background-color: white;
+        display: inline-flex;
+        margin: 2em 5em 0 5em;
+        height: 10em;
+        align-items: center;
+    }
+
+
+    .links {
+        justify-self: center;
+        padding: 0;
+        margin: 0 1em;
+    }
+
+    .Template {
+        margin: 1em 2em;
+        justify-self: center;
+    }
+
+    .Template>button {
+        background-color: black;
+        color: white;
+        border-color: black;
+        text-wrap: nowrap;
+        font-size: 1em;
+    }
+}
+
+@media (max-width:1280px) {
+    main {
+        display: flex;
+        height: 90vh;
+        margin: 1em;
+    }
+
+    #Left {
+        background-color: white;
+        position: relative;
+        display: inline-flex;
+        align-self: top;
+        padding: 0 2em;
+        width: 30vw;
+        margin: 5em;
+    }
+
+    #Title>h1 {
+        font-size: 3em;
+        text-align: left;
+        margin: 0;
+    }
+
+    #Title>h2 {
+        font-size: 1.5em;
+        text-align: left;
+        margin: 0;
+        color:
+            rgb(110, 110, 110);
+        text-wrap: nowrap;
+    }
+
+    #Title {
+        padding: 1em;
+        justify-content: flex-start
+    }
+
+    #subheading {
+        display: inline-flex;
+        margin: 1em 0;
+        bottom: 0;
+        align-items: flex-end;
+        text-wrap: nowrap;
+        font-size: 1em;
+    }
+
+    #subheading>#tags {
+        display: flex;
+    }
+
+    #tags {
+        font-size: 1.15em;
+    }
+
+    #guidelines {
+        font-size: 1.25em;
+        text-wrap: nowrap;
+        margin: 1em;
+        padding: 0;
+    }
+
+    #subheading>#tags {
+        display: flex;
+        margin-left: 6em;
+    }
+
+    button {
+        font-size: .7em;
+        margin: 0 .5em;
+        color: blueviolet;
+        background-color: rgb(221, 186, 255, 180);
+        border-color: rgb(182, 154, 208);
+        text-wrap: nowrap;
+    }
+
+    #Right {
+        background-color: rgb(255, 255, 255);
+        align-self: center;
+        width: 30vw;
+        margin: 0;
+    }
+
+    .Machine {
+        background-color: white;
+        display: inline-flex;
+        margin: 2em 5em 0 5em;
+        height: 10em;
+        align-items: center;
+    }
+
+
+    .links {
+        justify-self: center;
+        padding: 0;
+        margin: 0 1em;
+    }
+
+    .Template {
+        margin: 1em 2em;
+        justify-self: center;
+    }
+
+    .Template>button {
+        background-color: black;
+        color: white;
+        border-color: black;
+        text-wrap: nowrap;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #Left,
+    #Right {
+        width: 90vw;
+        margin: 1em auto;
+    }
+
+    #Left {
+        background-color: white;
+
+        /* just to test visually */
+    }
+
+    #Title>h1 {
+        font-size: 2em;
+        text-align: left;
+        margin: 0;
+    }
+
+    #Title>h2 {
+        font-size: 1.5em;
+        text-align: left;
+        margin: 0;
+        color:
+            rgb(110, 110, 110);
+    }
+
+
+    #subheading>#tags {
+        display: flex;
+        margin-left: 5em;
+    }
+
+    button {
+        font-size: .75em;
+        margin: 0 1em;
+        color: blueviolet;
+        background-color: rgb(221, 186, 255, 180);
+        border-color: rgb(182, 154, 208);
+    }
+
+    #guidelines {
+        font-size: 1.25em;
+        margin: 1em;
+        padding: 1em;
+        align-items: center;
+    }
+
+    #Right {
+        background-color: white;
+        display: inline-flex;
+        /* make #Right a flex container */
+        justify-self: center;
+        /* horizontally center the children */
+    }
+
+    .Machine {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        /* stack contents vertically inside each Machine */
+        align-items: center;
+        /* center contents inside each Machine */
+        justify-content: center;
+        height: 20vh;
+        background-color: white;
+    }
+
+
+
+    #m2 {
+        height: 8.5em;
+        margin: 0 auto;
+    }
+
+    #m1 {
+        height: 8.5em;
+        width: 14em;
+        margin: 0 auto;
+    }
+
+    #machineC {
+        height: 5em;
+    }
+
+    .links {
+        justify-self: center;
+        padding: 0;
+    }
+
+    .Template {
+        margin: .5em 0;
+        top: 0;
+        justify-self: center;
+    }
+
+    .Template>button {
+        background-color: black;
+        color: white;
+        border-color: black;
+        padding: 0 3em 0 3em;
+        height: 2em;
+    }
+
+}
+
+@media (max-width: 590px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #Left,
+    #Right {
+        width: 90vw;
+    }
+
+    #Left {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    #subheading {
+        display: inline-flex;
+        margin: 1em 0;
+        bottom: 0;
+        align-items: flex-end;
+        text-wrap: nowrap;
+    }
+
+    #subheading>#tags {
+        display: flex;
+        margin-left: 4em;
+    }
+
+    button {
+        font-size: .75em;
+        margin: 0 .25em;
+        color: blueviolet;
+        background-color: rgb(221, 186, 255, 180);
+        border-color: rgb(182, 154, 208);
+    }
+
+    #guidelines {
+        font-size: 1.2em;
+        align-items: center;
+    }
+
+    #Title>h1 {
+        font-size: 2em;
+    }
+
+    #Title>h2 {
+        font-size: 1.5em;
+    }
+
+    #Right {
+        background-color: white;
+        display: inline-flex;
+        /* make #Right a flex container */
+        justify-self: center;
+        /* horizontally center the children */
+    }
+
+    .Machine {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        /* stack contents vertically inside each Machine */
+        align-items: center;
+        /* center contents inside each Machine */
+        justify-content: center;
+        height: 20vh;
+        background-color: white;
+    }
+
+
+
+    #m2 {
+        height: 6em;
+        margin: .5em auto;
+    }
+
+    #m1 {
+        height: 6em;
+        width: 12em;
+        margin: .5em auto;
+    }
+
+    #machineC {
+        height: 5em;
+    }
+
+    .links {
+        justify-self: center;
+        padding: 0;
+    }
+
+    .Template {
+        margin: .5em 0;
+        top: 0;
+        font-size: 1em;
+        justify-self: center;
+    }
+
+    .Template>button {
+        background-color: black;
+        color: white;
+        border-color: black;
+        padding: 0 2em 0 2em;
+        height: 2em;
+        font-size: 1em;
+    }
+
+}

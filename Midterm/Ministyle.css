@@ -1,0 +1,62 @@
+html,
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+
+header {
+    background-color: pink;
+    width: 100vw;
+    height: 10vh;
+}
+
+p {
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    margin: 0 5em;
+}
+
+#tutorialLeft {
+    background-color: rgb(0, 123, 255);
+    position: relative;
+    display: flex;
+    align-self: top;
+    padding: 0 2em;
+    width: 40vw;
+    margin: 5em;
+    height: 70vh;
+    justify-content: center;
+}
+
+
+#Tabs {
+    font-size: 1em;
+    text-align: left;
+    margin: 0;
+    background-color: rgb(143, 59, 73);
+    text-wrap: nowrap;
+    margin: 0 5em;
+    justify-self: center;
+}
+
+#tabTitle {
+    background-color: aquamarine;
+}
+
+.Topics {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.Topics>button {
+    align-self: center;
+    font-size: 2em;
+    padding: .25em 10em;
+}
