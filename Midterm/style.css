@@ -1,0 +1,110 @@
+html,
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+
+header {
+    background-color: pink;
+    width: 100vw;
+    height: 10vh;
+}
+
+p {
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    height: 90vh;
+}
+
+#Content {
+    background-color: aqua;
+    position: relative;
+    display: inline-flex;
+    align-self: top;
+    padding: 0 2em;
+    width: 40vw;
+    margin: 1em;
+}
+
+#Title>h1 {
+    font-size: 3em;
+    text-align: left;
+    margin: 0;
+}
+
+#Title>h2 {
+    font-size: 2em;
+    text-align: left;
+    margin: 0;
+    color:
+        rgb(110, 110, 110);
+}
+
+#Title {
+    padding: 2em;
+    justify-content: flex-start
+}
+
+#subheading {
+    display: inline-flex;
+    margin: 1em 0;
+    bottom: 0;
+align-items: flex-end;
+}
+
+#subheading>#tags {
+    display: flex;
+    margin-left: 10em;
+}
+
+button {
+    font-size: 1em;
+    margin: 0 1em;
+    color:blueviolet;
+    background-color: rgb(221, 186, 255, 180);
+    border-color: rgb(182, 154, 208);
+}
+
+#guidelines {
+    font-size: 1.5em;
+    margin: 1em;
+    padding: 1em;
+    align-items: center;
+}
+
+#Right {
+    background-color: rgb(255, 255, 255);
+    align-self: center;
+    width: 60vw;
+    margin: 1em;
+}
+
+.Machine {
+    background-color: aquamarine;
+    display: inline-flex;
+    margin:5em 5em 0 5em;
+    height: 10em;
+    align-items:center;
+}
+
+.Machine p{
+    align-self: center;
+}
+
+#m2{
+    height: 8.5em;
+}
+
+#m1{
+    height: 11em;
+}
+
+
+/* canvas {
+  display: block;
+} */
