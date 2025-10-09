@@ -2,7 +2,8 @@ html,
 body {
     margin: 0 auto;
     padding: 0 auto;
-
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
 }
 
 
@@ -17,46 +18,140 @@ p {
 }
 
 main {
-    display: flex;
     margin: 0 5em;
+    display: inline-flex;
 }
 
 #tutorialLeft {
     background-color: rgb(0, 123, 255);
-    position: relative;
-    display: flex;
-    align-self: top;
+    flex-direction: column;
+    align-content: flex-start;
     padding: 0 2em;
     width: 40vw;
-    margin: 5em;
-    height: 70vh;
+    margin: 0em 3em 0 3em;
+    height: 90vh;
     justify-content: center;
 }
 
 
-#Tabs {
-    font-size: 1em;
-    text-align: left;
-    margin: 0;
-    background-color: rgb(143, 59, 73);
-    text-wrap: nowrap;
-    margin: 0 5em;
-    justify-self: center;
-}
-
 #tabTitle {
     background-color: aquamarine;
+    margin: 2.25em 0 0 0;
+    font-size: 3em;
+    padding: 0;
+    text-wrap: nowrap;
+}
+
+#buttonTemplate>button {
+    display: flex;
+    font-size: 1em;
+    color: white;
+    background-color: black;
+    padding: .5em 1em .5em 1em;
+    justify-content: center;
+    margin: 1em 0 1em 0;
+    text-wrap: nowrap;
+    min-width: 5em;
+    /* max-width: 20em; */
 }
 
 .Topics {
-    background-color: aliceblue;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    margin: 1em 0 0 0;
 }
 
 .Topics>button {
     align-self: center;
-    font-size: 2em;
-    padding: .25em 10em;
+    background-color: white;
+    border-color: lightgray;
+    font-size: 2.3em;
+    text-wrap: nowrap;
+    width: 100%;
+    min-width: 5em;
+    max-width: 18.4em;
+    padding: .15em 0;
+}
+
+#tutorialRight {
+    background-color: teal;
+    display: inline-flex;
+    justify-items: flex-end;
+}
+
+#tutorialRight>img {
+    height: 20em;
+    width: 20em;
+}
+
+#Folder{
+    display:flex;
+    flex-direction: column;
+}
+
+#Folder>img {
+    height: 4em;
+    width: 4em;
+
+}
+
+@media (max-width: 1770px) {
+    #tabTitle {}
+}
+
+@media (max-width: 1630px) {
+    #tabTitle {}
+
+}
+
+@media (max-width:1520px) {
+    #tabTitle {}
+
+}
+
+@media (max-width:1280px) {
+    #tabTitle {}
+
+}
+
+@media (max-width: 1000px) {
+    #tutorialLeft {
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    #tabTitle {
+        font-size: 2.2em;
+        margin: 3em 0 0 0;
+    }
+
+    .Topics>button {
+        font-size: 1.5em;
+    }
+
+
+}
+
+@media (max-width: 750px) {
+
+    #tutorialLeft {
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    #tabTitle {
+        font-size: 1.5em;
+        margin: 2em 0 0 0;
+
+    }
+
+    .Topics>button {
+        font-size: 1em;
+    }
+
+    #buttonTemplate>button {
+        width: 16em;
+        font-size: .75em;
+    }
+
 }

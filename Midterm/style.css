@@ -2,24 +2,21 @@ html,
 body {
     margin: 0 auto;
     padding: 0 auto;
-
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
+main{
+    display: inline-flex;
+}
 
 header {
     background-color: pink;
-    width: 100vw;
     height: 10vh;
 }
 
 p {
     margin: 0 auto;
-}
-
-main {
-    display: flex;
-    height: 90vh;
-    margin: 0 5em;
 }
 
 #Left {
@@ -36,6 +33,7 @@ main {
     font-size: 3em;
     text-align: left;
     margin: 0;
+    padding:0;
 }
 
 #Title>h2 {
@@ -764,3 +762,4 @@ button {
     }
 
 }
+
