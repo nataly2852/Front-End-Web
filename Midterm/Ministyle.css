@@ -2,8 +2,8 @@ html,
 body {
     margin: 0 auto;
     padding: 0 auto;
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -18,123 +18,384 @@ p {
 }
 
 main {
-    margin: 0 5em;
     display: inline-flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    min-width: 10em;
+    max-width:200em;
+    margin: 0 5em;
 }
 
 #tutorialLeft {
-    background-color: rgb(0, 123, 255);
+    background-color: white;
     flex-direction: column;
-    align-content: flex-start;
-    padding: 0 2em;
-    width: 40vw;
+    width: 50vw;
     margin: 0em 3em 0 3em;
-    height: 90vh;
-    justify-content: center;
+    height: 100vh;
 }
 
 
 #tabTitle {
-    background-color: aquamarine;
-    margin: 2.25em 0 0 0;
-    font-size: 3em;
-    padding: 0;
+    background-color: white;
+    font-size: 2em;
     text-wrap: nowrap;
 }
+
+#tabTitle>h1 {
+    margin: .9em 0 .2em 0;
+}
+
 
 #buttonTemplate>button {
     display: flex;
     font-size: 1em;
     color: white;
     background-color: black;
-    padding: .5em 1em .5em 1em;
+    padding: .5em;
     justify-content: center;
-    margin: 1em 0 1em 0;
+    margin: 0 .5em 2em .5em;
     text-wrap: nowrap;
     min-width: 5em;
-    /* max-width: 20em; */
+}
+
+#buttonTemplate>button:hover {
+    background-color: white;
+    color: black;
+
 }
 
 .Topics {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 1em 0 0 0;
+    height: 60vh;
+    background-color: white;
+}
+
+.Topics>button:hover{
+    background-color: rgba(145, 31, 183, 0.4);
 }
 
 .Topics>button {
-    align-self: center;
+    align-items: center;
     background-color: white;
     border-color: lightgray;
     font-size: 2.3em;
     text-wrap: nowrap;
     width: 100%;
     min-width: 5em;
-    max-width: 18.4em;
-    padding: .15em 0;
+    max-width: 22em;
+    padding: .4em 0;
 }
 
 #tutorialRight {
-    background-color: teal;
+    background-color: white;
     display: inline-flex;
-    justify-items: flex-end;
+    justify-content: flex-start;
+    width: 60vw;
+    margin: 0 13em 0 0em;
+    height: 100vh;
+    align-items: center;
 }
 
-#tutorialRight>img {
-    height: 20em;
-    width: 20em;
+#imgA {
+    background-color: white;
+    align-content: center;
+    /* border-style: solid; */
+    /* border-color: lightgray; */
+    border-width: .25em;
+    padding: 0 4em 0 4em;
+    height: 60vh;
+    margin-left: 4em;
 }
 
-#Folder{
-    display:flex;
+#imgA>img {
+    height: 30em;
+}
+
+
+#Folder {
+    display: flex;
     flex-direction: column;
+    /* border-style: solid; */
+    /* border-color: lightgray; */
+    border-width: .25em;
+    height: 60vh;
+    padding: 0 1em;
+    background-color: white;
+    justify-content: center;
 }
 
-#Folder>img {
-    height: 4em;
-    width: 4em;
-
+.img1A {
+    position: relative;
 }
 
-@media (max-width: 1770px) {
-    #tabTitle {}
+.img1A>img {
+    height: 4.75em;
+    position: relative;
 }
 
-@media (max-width: 1630px) {
-    #tabTitle {}
-
+.textimg {
+    position: absolute;
+    justify-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1.75em 2em 1.75em 2em;
+    bottom: .25em;
 }
 
-@media (max-width:1520px) {
-    #tabTitle {}
 
-}
 
-@media (max-width:1280px) {
-    #tabTitle {}
-
-}
-
-@media (max-width: 1000px) {
-    #tutorialLeft {
-        justify-content: flex-start;
+@media (max-width:1380px) {
+    main {
         margin: 0;
+        left: 0;
+        width: 100vw;
     }
 
+    #tutorialLeft {
+        background-color: white;
+        flex-direction: column;
+        width: 100%;
+        min-width: 10em;
+        max-width: 50em;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+
     #tabTitle {
-        font-size: 2.2em;
-        margin: 3em 0 0 0;
+        background-color: white;
+        font-size: 1.25em;
+        text-wrap: nowrap;
+        margin: 1.2em;
+        justify-self: flex-start;
+    }
+
+
+    #buttonTemplate>button {
+        display: flex;
+        font-size: .75em;
+        color: white;
+        background-color: black;
+        padding: .5em;
+        justify-self: flex-start;
+        margin: 2em;
+        text-wrap: nowrap;
+        min-width: 5em;
+    }
+
+    .Topics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0em 0 0 0;
+        height: 60vh;
+        background-color: white;
     }
 
     .Topics>button {
+        align-items: center;
+        background-color: white;
+        border-color: lightgray;
         font-size: 1.5em;
+        text-wrap: nowrap;
+        width: 100%;
+        min-width: 5em;
+        max-width: 30em;
+        padding: .4em 0;
+    }
+
+    #tutorialRight {
+        background-color: white;
+        display: inline-flex;
+        justify-content: flex-start;
+        width: 100%;
+        min-width: 10em;
+        max-width: 35em;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #imgA {
+        background-color: white;
+        /* border-style: solid;
+        border-color: lightgray; */
+        /* border-width: .25em; */
+        margin: 3.5em 0 10em 0;
+    }
+
+    #imgA>img {
+        height: 20em;
+    }
+
+
+    #Folder {
+        /* border-style: solid;
+        border-color: lightgray;
+        border-width: .25em; */
+        height: 40em;
+        padding: .15em 1em;
+        margin: 3.5em 0 10em 0;
+        background-color: white;
+        justify-content: center;
+    }
+
+    .img1A {
+        position: relative;
+    }
+
+    .img1A>img {
+        height: 3em;
+        position: relative;
+    }
+
+    .textimg {
+        position: absolute;
+        justify-items: center;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 1em 1.13em 1em 1.13em;
     }
 
 
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1100px) {
+    main {
+        margin: 0;
+        left: 0;
+        width: 100vw;
+    }
 
     #tutorialLeft {
+        background-color: white;
+        flex-direction: column;
+        width: 100%;
+        min-width: 10em;
+        max-width: 20em;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #tabTitle {
+        background-color: white;
+        font-size: 1em;
+        text-wrap: nowrap;
+        margin: 1.2em;
+        justify-self: flex-start;
+    }
+
+
+    #buttonTemplate>button {
+        display: flex;
+        font-size: .75em;
+        color: white;
+        background-color: black;
+        padding: .5em;
+        justify-self: flex-start;
+        margin: 2em;
+        text-wrap: nowrap;
+        min-width: 5em;
+    }
+
+    .Topics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2.7em 0;
+        height: 60vh;
+        background-color: white;
+    }
+
+    .Topics>button {
+        align-items: center;
+        background-color: white;
+        border-color: lightgray;
+        font-size: 1.5em;
+        text-wrap: nowrap;
+        width: 100%;
+        min-width: 5em;
+        max-width: 30em;
+        padding: .4em 0;
+    }
+
+    #tutorialRight {
+        background-color: white;
+        display: inline-flex;
+        justify-content: flex-start;
+        width: 100%;
+        min-width: 10em;
+        max-width: 35em;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #imgA {
+        background-color: white;
+        /* border-style: solid; */
+        /* border-color: lightgray; */
+        border-width: .25em;
+        margin: 3.5em 0 10em 0;
+    }
+
+    #imgA>img {
+        height: 20em;
+    }
+
+
+    #Folder {
+        /* border-style: solid; */
+        /* border-color: lightgray; */
+        border-width: .25em;
+        height: 40em;
+        padding: .15em 1em;
+        margin: 3.5em 0 10em 0;
+        background-color: white;
+        justify-content: center;
+    }
+
+    .img1A {
+        position: relative;
+    }
+
+    .img1A>img {
+        height: 3em;
+        position: relative;
+    }
+
+    .textimg {
+        position: absolute;
+        justify-items: center;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 1em 1.13em 1em 1.13em;
+    }
+
+
+
+}
+
+@media (max-width: 870px) {
+
+    /* #tutorialLeft {
         justify-content: flex-start;
         margin: 0;
     }
@@ -152,6 +413,123 @@ main {
     #buttonTemplate>button {
         width: 16em;
         font-size: .75em;
+    } */
+
+    main {
+        margin: 0;
+        left: 0;
+        width: 100vw;
     }
+
+    #tutorialLeft {
+        background-color: white(0, 123, 255);
+        flex-direction: column;
+        width: 100%;
+        min-width: 5em;
+        max-width: 15em;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #tabTitle {
+        background-color: white;
+        font-size: .75em;
+        text-wrap: nowrap;
+        margin: 1.2em;
+        justify-self: flex-start;
+    }
+
+
+    #buttonTemplate>button {
+        display: flex;
+        font-size: .5em;
+        color: white;
+        background-color: black;
+        padding: .5em;
+        justify-self: flex-start;
+        margin: 2.6em;
+        text-wrap: nowrap;
+        min-width: 5em;
+    }
+
+    .Topics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0em 0 0 0;
+        height: 60vh;
+        background-color: white;
+    }
+
+    .Topics>button {
+        align-items: center;
+        background-color: white;
+        border-color: lightgray;
+        font-size: 1.5em;
+        text-wrap: nowrap;
+        width: 100%;
+        min-width: 5em;
+        max-width: 30em;
+        padding: .4em 0;
+    }
+
+    #tutorialRight {
+        background-color: white;
+        display: inline-flex;
+        justify-content: flex-start;
+        width: 100%;
+        min-width: 10em;
+        max-width: 35em;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #imgA {
+        background-color: white;
+        /* border-style: solid; */
+        /* border-color: lightgray; */
+        border-width: .25em;
+        margin: 3.5em 0 10em 0;
+    }
+
+    #imgA>img {
+        height: 20em;
+    }
+
+
+    #Folder {
+        /* border-style: solid; */
+        /* border-color: lightgray; */
+        border-width: .25em;
+        height: 40em;
+        padding: .15em 1em;
+        margin: 3.5em 0 10em 0;
+        background-color: white;
+        justify-content: center;
+    }
+
+    .img1A {
+        position: relative;
+    }
+
+    .img1A>img {
+        height: 3em;
+        position: relative;
+    }
+
+    .textimg {
+        position: absolute;
+        justify-items: center;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 1em 1.13em 1em 1.13em;
+    }
+
 
 }
